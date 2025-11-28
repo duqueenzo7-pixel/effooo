@@ -2,11 +2,20 @@ console.log("Le script est chargé !");
 
 const themeButton = document.querySelector('#bouton1');
 
-if (themeButton) {  
-    themeButton.addEventListener('click', () => {
+const lienSuivant = document.querySelector('#lien-suivant');
+
+if (themeButton) {  
+    themeButton.addEventListener('click', () => 
         themeButton.classList.toggle('vert');
+        
+          
+        if (themeButton.classList.contains('vert')) {
+            lienSuivant.classList.remove('cache');
+        } else {
+            lienSuivant.classList.add('cache');
     });
 }
+
 
 //---------------------------------------------------------
 
@@ -29,8 +38,6 @@ if (themeButton3) {
 }
 
 //---------------------------------------------------------
-
-
 
 const themeButton4 = document.querySelector('#bouton4');
 
@@ -94,5 +101,7 @@ if (themeButton9) {
         themeButton9.classList.toggle('vert');
     });
 }
+
+
 
 //---------------------------------------------------------

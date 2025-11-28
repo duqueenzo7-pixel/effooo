@@ -21,10 +21,7 @@ header {
 }
 
 
-.lien a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.959);
-}
+
 
 
 input[type="submit"]:hover {
@@ -36,6 +33,11 @@ input[type="submit"]:hover {
     color: white;
 }
 
+.rouge {
+    background-color: rgb(252, 0, 0);
+    color: white;
+}
+
 button {
     background-color: #000000; 
     color: rgb(190, 174, 174);
@@ -44,15 +46,16 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+ 
+.cache {
+    display: none;
+}
 
 button:hover {
     background-color: #948c8c; 
 }
 
-.rouge {
-    background-color: rgb(252, 0, 0);
-    color: white;
-}
+
 .container {
     display: flex;
     flex-direction: column;
