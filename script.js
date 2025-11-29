@@ -153,3 +153,21 @@ if (bouton9) {
         }
     });
 }
+
+//---------------------------------------------------------//---------------------------------------------------------v
+const bouton10 = document.querySelector('#bouton9');
+const lienSuivant4 = document.querySelector('#lien-suivant4');
+
+if (bouton9) {
+    bouton9.addEventListener('click', () => {
+
+        if (bouton9.classList.contains('vert')) {
+            lienSuivant4.classList.remove('cache');
+        } 
+        
+        else {
+            lienSuivant4.classList.add('cache');
+        }
+    });
+}
+

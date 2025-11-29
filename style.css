@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(61, 34, 99, 0.384);
+    background-color: rgba(109, 124, 212, 0.747);
     color: rgb(3, 3, 3);
     margin: 0;
     font-size: 30px
@@ -39,8 +39,8 @@ input[type="submit"]:hover {
 }
 
 button {
-    background-color: #000000; 
-    color: rgb(190, 174, 174);
+    background-color: #adaaaa; 
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
