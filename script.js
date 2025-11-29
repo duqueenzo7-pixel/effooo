@@ -116,8 +116,8 @@ if (bouton1) {
     });
 }
 
-//---------------------------------------------------------//---------------------------------------------------------
 
+//---------------------------------------------------------//---------------------------------------------------------
 
 const bouton5 = document.querySelector('#bouton5');
 const lienSuivant2 = document.querySelector('#lien-suivant2');
@@ -131,6 +131,25 @@ if (bouton5) {
         
         else {
             lienSuivant2.classList.add('cache');
+        }
+    });
+}
+
+//---------------------------------------------------------//---------------------------------------------------------v
+
+
+const bouton9 = document.querySelector('#bouton9');
+const lienSuivant3 = document.querySelector('#lien-suivant3');
+
+if (bouton9) {
+    bouton9.addEventListener('click', () => {
+
+        if (bouton9.classList.contains('vert')) {
+            lienSuivant3.classList.remove('cache');
+        } 
+        
+        else {
+            lienSuivant3.classList.add('cache');
         }
     });
 }
