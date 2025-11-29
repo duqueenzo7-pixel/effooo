@@ -1,18 +1,11 @@
 console.log("Le script est chargé !");
 
-const themeButton = document.querySelector('#bouton1');
+const themeButton1 = document.querySelector('#bouton1');
 
-const lienSuivant = document.querySelector('#lien-suivant');
 
-if (themeButton) {  
-    themeButton.addEventListener('click', () => 
-        themeButton.classList.toggle('vert');
-        
-          
-        if (themeButton.classList.contains('vert')) {
-            lienSuivant.classList.remove('cache');
-        } else {
-            lienSuivant.classList.add('cache');
+if (themeButton1) {  
+    themeButton1.addEventListener('click', () => {
+        themeButton1.classList.toggle('vert');
     });
 }
 
@@ -104,4 +97,40 @@ if (themeButton9) {
 
 
 
-//---------------------------------------------------------
+//---------------------------------------------------------//---------------------------------------------------------
+
+
+const bouton1 = document.querySelector('#bouton1');
+const lienSuivant = document.querySelector('#lien-suivant');
+
+if (bouton1) {
+    bouton1.addEventListener('click', () => {
+
+        if (bouton1.classList.contains('vert')) {
+            lienSuivant.classList.remove('cache');
+        } 
+        
+        else {
+            lienSuivant.classList.add('cache');
+        }
+    });
+}
+
+//---------------------------------------------------------//---------------------------------------------------------
+
+
+const bouton5 = document.querySelector('#bouton5');
+const lienSuivant2 = document.querySelector('#lien-suivant2');
+
+if (bouton5) {
+    bouton5.addEventListener('click', () => {
+
+        if (bouton5.classList.contains('vert')) {
+            lienSuivant2.classList.remove('cache');
+        } 
+        
+        else {
+            lienSuivant2.classList.add('cache');
+        }
+    });
+}
